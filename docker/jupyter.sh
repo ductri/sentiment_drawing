@@ -8,4 +8,4 @@ docker logs -f --timestamps $(docker run --runtime=nvidia -d -e PYTHONIOENCODING
 -v `pwd`/source/:/source \
 -v `pwd`/../dataset:/dataset:ro \
 -p $JUPYTER_PORT:$JUPYTER_PORT \
-ductricse/BACKEND /bin/bash -c "jupyter notebook --port=$JUPYTER_PORT --allow-root --ip=0.0.0.0")
+ductricse/$BACKEND /bin/bash -c "jupyter notebook --port=$JUPYTER_PORT --allow-root --ip=0.0.0.0")
